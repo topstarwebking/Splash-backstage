@@ -1,0 +1,158 @@
+@import ../../../styles/helpers
+
+.section
+    overflow: hidden
+
+.wrapper
+    position: relative
+
+.title
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    margin-left: 39px
+    margin-top: 32px
+    +d
+        margin-bottom: 14px
+    +m
+        margin-bottom: 12px
+        text-align: center
+
+.inner
+    margin: 0 -16px
+
+.gallery
+    display: flex
+    flex-wrap: wrap
+    margin: -8px -4px 16px
+
+.overlay
+    width: 100%
+    height: 100%
+    position: absolute
+    z-index: 9999
+    top: 50px
+    left: 0
+    z-index: 9999
+    background: white
+    opacity: .9
+    background: linear-gradient(to top, transparent, white);
+
+.preview
+    flex: 0 0 calc(33.333% - 8px)
+    width: calc(33.333% - 8px)
+    margin: 8px 4px 0
+    &:first-child
+        flex: 0 0 calc(100% - 8px)
+        width: calc(100% - 8px)
+    img
+        width: 100%
+        border-radius: 8px
+        max-height: 200px
+        object-fit: cover
+
+.subtitle
+    margin-bottom: 8px
+    +body-bold-1
+    color: $neutrals2
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    flex-grow: 3
+    border-right: 1px solid
+    border-image: linear-gradient(to bottom, gray, rgba(0, 0, 0, 0)) 1 100%
+    padding-left: 32px
+    padding-top: 10px
+    +dark
+        color: $neutrals8
+
+.line
+    display: flex
+    flex-direction: row
+    align-items: center
+
+.user
+    display: flex
+    align-items: center
+    margin-right: auto
+    color: $neutrals3
+    +dark
+        color: $neutrals6
+    span
+        font-weight: 500
+
+.avatar
+    flex-grow: 1
+    width: 24px
+    height: 24px
+    margin-right: 12px
+    img
+        width: 100%
+        height: 100%
+        object-fit: contain
+        border-radius: 50%
+    
+.counter
+    flex-shrink: 0
+
+.item
+    padding: 15px
+
+.subitem
+    border-radius: 8px
+    box-shadow: 1px 1px 6px 0px #04111d40
+    background-clip: padding-box
+    position: relative
+
+    &:hover
+        .subtitle
+            color: $blue
+        .overlay
+            opacity: 0.3
+
+.top
+    display: flex
+    align-items: center
+    +m
+        display: block
+        margin-bottom: 32px
+
+.stage
+    +body-bold-1
+    color: $black
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+
+.field
+    .dropdown
+        min-width: 256px
+        +m
+            min-width: 100%
+
+.label
+    margin-bottom: 12px
+    color: $neutrals5
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    cursor: pointer
+    &:hover
+        color: $blue
+.box
+    margin-right: auto
+    +m
+        margin: 0 0 16px
+    .dropdown
+        min-width: auto
+        margin-left: -24px
+        +m
+            display: inline-block

@@ -1,0 +1,61 @@
+@import ../../styles/helpers
+
+.loadercontainer
+	position: fixed 
+	top: 0 
+	left: 0 
+	height: 100% 
+	width: 100% 
+	background: #000000 
+	z-index: 999999
+	display: none
+	&.active 
+		display: block 
+		opacity: 0.8
+	.loaderblock 
+		position: absolute 
+		left: 50% 
+		top: 50% 
+		-webkit-transform: translate(-50%,-50%) 
+		transform: translate(-50%,-50%) 
+		display: flex 
+		flex-flow: column 
+		align-items: center 
+		font-size: 1.7em 
+		letter-spacing: 0.16em 
+	.loadertitle 
+		color: #fff
+		text-transform: uppercase 
+.spinner 
+	margin-top: 0.5em 
+	.line 
+		width: 2px 
+		height: 24px 
+		background: #fff 
+		margin: 0 6px 
+		display: inline-block 
+		animation: spinnerline 1000ms infinite ease-in-out 
+	.line1 
+		animation-delay: 800ms 
+	.line2 
+		animation-delay: 600ms 
+	.line3 
+		animation-delay: 400ms 
+	.line4 
+		animation-delay: 200ms 
+	.line6 
+		animation-delay: 200ms 
+	.line7 
+		animation-delay: 400ms 
+	.line8 
+		animation-delay: 600ms 
+	.line9 
+		animation-delay: 800ms
+
+@keyframes  spinnerline
+	0%
+		opacity: 1 
+	50% 
+		opacity: 0 
+	100% 
+		opacity: 1

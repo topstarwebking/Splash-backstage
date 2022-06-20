@@ -1,0 +1,87 @@
+@import ../../../styles/helpers
+
+.head
+    max-width: 600px
+    margin: 0 auto 128px
+    text-align: center
+    +x
+        margin-bottom: 112px
+    +m
+        margin-bottom: 64px
+
+.stage
+    margin-bottom: 8px
+    +hairline-2
+    color: $neutrals4
+
+.title
+    margin-bottom: 12px
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 150%;
+    color: #333333;
+    +m
+        font-size: 32px
+
+.subtitle1
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+
+.subtitle2
+    display: flex
+    flex-direction: row
+    margin-top: 100px
+    align-items: center;
+    .learn
+        color: $blue
+        margin-left: 5px
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+
+.wrapper
+    display: flex
+    flex-direction: row;
+    justify-content: space-between
+    .intro
+        flex-grow: 2
+        display:flex
+        flex-direction: column
+        justify-content: flex-start
+        padding: 100px 0px 0px 0px
+    .preview
+        flex-grow: 1
+
+.wrapper2
+    display: flex
+    flex-direction: row;
+    justify-content: space-between
+    align-items: baseline;
+    .forbes
+        flex-grow: 1
+    .yahoo
+        flex-grow: 1
+        text-align: center
+    .microsoft
+        flex-grow: 1
+        text-align: right
+    .techcrunch
+        flex-grow: 1
+        text-align: right
+
+.card
+    max-width: calc(100% - 32px)
+    margin: 32px 16px 0
+    +m
+        max-width: 100%
+        margin: 0
+
+.section
+    box-shadow: 2px 2px 3px rgba(15, 15, 15, 0.1)

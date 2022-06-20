@@ -1,0 +1,102 @@
+@import ../../styles/helpers
+
+.top
+    display: flex
+    align-items: center
+    margin-bottom: 48px
+    padding-bottom: 32px
+    border-bottom: 1px solid $neutrals6
+    +t
+        display: block
+        margin-bottom: 32px
+        padding-bottom: 0
+        border: none
+    +m
+        margin-bottom: 24px
+    +dark
+        border-color: $neutrals3
+
+.row
+    display: flex
+    +t
+        display: block
+
+.wrapper
+    flex-grow: 1
+    padding-left: 32px
+    +t
+        padding-left: 0
+
+.label
+    margin-bottom: 12px
+    color: $neutrals5
+    font-family: Poppins
+    font-style: normal
+    font-weight: 600
+    font-size: 20px
+    line-height: 150%
+    cursor: pointer
+    &:hover
+        color: $blue
+
+.list
+    display: flex
+    flex-wrap: wrap
+    margin: -32px -16px 0
+    +m
+        display: block
+        margin: 0
+
+.card
+    flex: 0 0 calc(33.333% - 32px)
+    max-width: calc(33.333% - 32px)
+    margin: 32px 16px 0
+    padding: 12px 
+    box-shadow: 0px 32px 32px rgba(31, 47, 70, 0.12)
+    border-radius: 20px
+    +r(1279)
+        flex: 0 0 calc(50% - 32px)
+        max-width: calc(50% - 32px)
+    +m
+        max-width: 100%
+        margin: 0
+        &:not(:last-child)
+            margin-bottom: 32px
+    +dark
+        background: $neutrals2
+
+.btns
+    margin-top: 32px
+    text-align: center
+
+.top
+    display: flex
+    align-items: center
+    +m
+        display: block
+        margin-bottom: 32px
+
+.box
+    margin-right: auto
+    +m
+        margin: 0 0 16px
+    .dropdown
+        min-width: auto
+        margin-left: -24px
+        +m
+            display: inline-block
+
+.stage
+    +body-bold-1
+    color: $black
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+
+.field
+    .dropdown
+        min-width: 256px
+        +m
+            min-width: 100%

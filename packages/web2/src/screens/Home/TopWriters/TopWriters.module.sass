@@ -1,0 +1,88 @@
+@import ../../../styles/helpers
+
+.section
+    overflow: hidden
+    +x
+        padding-bottom: 112px
+    +m
+        padding-bottom: 64px
+
+.top
+    display: flex
+    align-items: center
+    +m
+        display: block
+        margin-bottom: 32px
+
+.stage
+    +body-bold-1
+    color: $black
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    
+.label
+    margin-bottom: 12px
+    color: $neutrals5
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    cursor: pointer
+    &:hover
+        color: $blue
+.field
+    .dropdown
+        min-width: 256px
+        +m
+            min-width: 100%
+
+.box
+    margin-right: auto
+    +m
+        margin: 0 0 16px
+    .dropdown
+        min-width: auto
+        margin-left: -24px
+        +m
+            display: inline-block
+    
+.wrapper
+    position: relative
+    margin: 0 -16px
+    +m
+        margin: 0 -4px
+
+.inner
+    margin: 0 -16px
+
+.card
+    max-width: calc(100% - 32px)
+    margin: 32px 16px 0
+    +m
+        max-width: 100%
+        margin: 0
+
+.icon
+    margin-right: 4px
+    img
+        width: 16px
+    
+.control
+    display: flex
+
+.button
+    svg
+        fill: $neutrals5
+        transition: fill .2s
+    &:hover
+        svg
+            fill: $blue
+    &:not(:last-child)
+        margin-right: 8px
+    
+.body
+    text-align: center

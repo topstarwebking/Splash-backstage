@@ -1,0 +1,71 @@
+@import ../../styles/helpers
+
+.wallet_adapter_modal
+    opacity: 0;
+    transition: opacity .15s linear;
+    background: rgba(0,0,0,.5);
+    z-index: 1040;
+    overflow-y: auto;
+
+.wallet_adapter_modal_list
+    margin: 0 0 12px;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    
+    li
+        margin-top: 12px;
+
+.wallet_adapter_button
+    background-color: #404144;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-family: inter,roboto,helvetica neue,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    justify-content: space-between;
+    width: 100%
+
+.wallet_adapter_button_end_icon
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+
+.wallet_adapter_modal_container
+    display: flex;
+    margin: 3rem;
+    min-height: calc(100vh - 6rem);
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1050;
+    border-radius: 10px;
+    background: #2c2d30;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    font-family: inter,roboto,helvetica neue,Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    padding: 40px 20px 20px;
+    flex: 1 1;
+
+.wallet_adapter_modal_title
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41px;
+    margin-bottom: 27px;
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-top: 45px;
